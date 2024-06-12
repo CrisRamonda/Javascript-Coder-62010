@@ -27,6 +27,21 @@ function verCarrito() {
     }
 }
 
+function quitarUltimo() {
+    if (carrito.length > 0) {
+        let elemento = carrito[carrito.length-1]
+        alert(`${elemento} eliminado del carrito`)
+        carrito.pop()
+    
+        console.log(carrito)
+        console.log(elemento)
+        console.log(carrito[carrito.length-1], carrito.length)
+    } else {
+        alert('No hay productos en el carrito')
+    }
+
+}
+
 function limpiarCarrito() {
     carrito = []
     alert('Carrito limpio 🧹')
