@@ -25,8 +25,11 @@ function verCarrito() {
     } else {
         alert('No hay productos en el carrito')
     }
-
-    console.log(carrito.length)
-    console.log()
 }
 
+function limpiarCarrito() {
+    carrito = []
+    alert('Carrito limpio 🧹')
+
+    console.log(carrito)
+}
